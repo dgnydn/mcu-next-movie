@@ -25,7 +25,9 @@ type MCUData = {
  * @returns {Promise<MCUData>}
  */
 async function getMCUData(): Promise<MCUData> {
-  return await (await fetch("https://www.whenisthenextmcufilm.com/api")).json();
+  return await (await fetch("https://www.whenisthenextmcufilm.com/api", {
+    cache: "no-cache",
+  })).json();
 }
 
 export default async function Page() {
