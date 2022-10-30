@@ -3,7 +3,7 @@ Marvel sinematik evreninin en yakın tarihteki yayınlarını gösteren [Next.js
 
 Bu uygulamada `server component` ve `app` klasörünün kullanımını görebilirsiniz.
 
-![]()
+![](./public/image.png)
 
 Next.js 13 ile ilgili daha detaylı bilgiye [kendi sitesinden](https://nextjs.org) adresinden ulaşabilirsiniz.
 
