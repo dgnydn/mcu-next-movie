@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import "../styles/globals.css";
 import { Inter } from "@next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <title>Next MCU Movie</title>
       </head>
       <body>
-        <nav></nav>
         <main>{children}</main>
       </body>
     </html>

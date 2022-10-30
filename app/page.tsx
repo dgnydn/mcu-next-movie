@@ -34,7 +34,7 @@ export default async function Page() {
   const data = await getMCUData();
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center">
+    <div className="w-screen h-screen flex flex-col items-center justify-center">
       <div className="max-w-4xl w-full flex flex-col md:flex-row gap-4 justify-center items-center bg-gray-900/70 p-10 shadow-xl shadow-black">
         <Image src={data.poster_url} alt="" fill className="w-full h-full blur-md -z-10" />
         <div className="md:w-full w-32">
@@ -49,6 +49,9 @@ export default async function Page() {
           <p className="text-white">Days Until: <span className="font-bold">{data.days_until}</span></p>
           <div className="text-indigo-900 bg-white font-black p-1">Next: {data.following_production.title}</div>
         </div>
+      </div>
+      <div className="text-sm text-white bg-black p-1 mt-10 font-bold">
+        <Link href={"https://doganaydin.org"} prefetch title="Doğan Aydın" target={"_blank"}>Doğan Aydın</Link>
       </div>
     </div>
   )
